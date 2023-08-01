@@ -1,0 +1,1378 @@
+{
+	"info": {
+		"_postman_id": "b6b66418-6fd9-4738-a3f9-d3cb29224aec",
+		"name": "ProShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /api/users/shipinfo/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/shipinfo/:id/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/f956c10f-33d6-47ab-b10e-8f273e797ff7/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						"f956c10f-33d6-47ab-b10e-8f273e797ff7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/shipinfo/add/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address_title",
+							"value": "dummy",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "address_type",
+							"value": "HOME",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "availability",
+							"value": "8-22",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "Barrackkpore",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "landmark",
+							"value": "MMH",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "postalCode",
+							"value": "700122",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "city",
+							"value": "Kolkata",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "state",
+							"value": "WB",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "country",
+							"value": "INDIA",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "is_default_address",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/add/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/users/shipinfo/remove/:id/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/remove/3b4b5028-792b-4e13-afdf-1a6eecfbd1d9/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						"remove",
+						"3b4b5028-792b-4e13-afdf-1a6eecfbd1d9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/shipinfo/update/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address_title",
+							"value": "dumm",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "address_type",
+							"value": "HOME",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "availability",
+							"value": "8-22",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "Barrackkpore1",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "landmark",
+							"value": "MMH",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "postalCode",
+							"value": "700122",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "city",
+							"value": "Kolkata",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "state",
+							"value": "WB",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "country",
+							"value": "INDIA",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "is_default_address",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/update/89c6eded-6c1f-4491-af84-3052229d4924/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						"update",
+						"89c6eded-6c1f-4491-af84-3052229d4924",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/shipinfo/default/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/shipinfo/default/f956c10f-33d6-47ab-b10e-8f273e797ff7/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"shipinfo",
+						"default",
+						"f956c10f-33d6-47ab-b10e-8f273e797ff7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/account/update/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "8961187019",
+							"type": "default"
+						},
+						{
+							"key": "profile_image",
+							"contentType": "",
+							"type": "file",
+							"src": "/E:/Images/Photos Passport/ma.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/account/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"account",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMTEwMTcwLCJpYXQiOjE2ODA1MTgxNzAsImp0aSI6IjlhMGRiY2QxNWFhMjQ2OWViM2QwMDBkZDQ3MTBhZjJmIiwidXNlcl9pZCI6OH0.0NeUN4j_DXM6MHK0qF9NvDKYCy_sJxsMk08kKmJfNgU",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "thor",
+							"description": "admin",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "shelly@tcs.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/login/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/profile/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/register/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "testuser11",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "testuser14@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "Xyz@1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/register/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"description": "admin",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMDUyOTA1LCJpYXQiOjE2ODA0NjA5MDUsImp0aSI6ImE2MWY4NWUyYWVlYjQ1ZTk5ZDMxY2Q5Y2FmOWJkMDBhIiwidXNlcl9pZCI6OH0.ktJQwKRSTAq4nJzAjd6U0n6TkRzYjMTCew9vjxoNr5s",
+						"description": "non-admin",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/users/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET api/users/:id/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDA3OTA0LCJpYXQiOjE2ODQ4MTU5MDQsImp0aSI6IjRjMjBlM2RjYzNlNTRhNDZhNzE0NDkwMzllNTU5OGI1IiwidXNlcl9pZCI6OH0.2JI2Z-bTq1T5I9oUQAnKvLaTgSVoF6SQKOVi0WfDIV0",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/24/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"24",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/wishlist/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDA1OTg1LCJpYXQiOjE2ODQ0MTM5ODUsImp0aSI6IjgzZWE5NjExN2NkNzRkOWJhOTk4NTE0OGQ3ZmM2OTVmIiwidXNlcl9pZCI6OH0.gz0LM2xMft8PuQKXfcoZlYs6edqKgRA2-QdNcPmWMGU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/wishlist/:wishlisttitle/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2OTk0MDY3LCJpYXQiOjE2ODQ0MDIwNjcsImp0aSI6IjQ4YjU3YWE5MGU0NDQ2ODNiYTY3NmM3MDcyYTQ1NDRhIiwidXNlcl9pZCI6OH0.ZrAt6f0dLJeuZSE5C-m0uY3XtSL1zleDkKjegFsMcnM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "thor",
+							"description": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/user_dress/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"user_dress",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/wishlist/new/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDE2NzI1LCJpYXQiOjE2ODQ0MjQ3MjUsImp0aSI6ImMzMTk0NDY0N2YwNzRkZWU4MWUyZWNlMmQzYTQ4YTM2IiwidXNlcl9pZCI6MX0.DK7pzRKhWtVozjImYA42iNW8rMabfvu4-Dx4xP2zxw4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "wishlist_title",
+							"value": "user_dressfgdfgfgfddddggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+							"type": "default"
+						},
+						{
+							"key": "isPublic",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/new/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"new",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/users/wishlist/:id/add/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2OTk0MDY3LCJpYXQiOjE2ODQ0MDIwNjcsImp0aSI6IjQ4YjU3YWE5MGU0NDQ2ODNiYTY3NmM3MDcyYTQ1NDRhIiwidXNlcl9pZCI6OH0.ZrAt6f0dLJeuZSE5C-m0uY3XtSL1zleDkKjegFsMcnM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "b8d6c13c-75f6-4948-b2b2-356ec77f9c55",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8/add/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/wishlist/:id/public/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDE2Nzk1LCJpYXQiOjE2ODQ0MjQ3OTUsImp0aSI6IjFkNGI1YmVjNTBjYTRjYjY4MzBjNmIzYmY4MDAzODRjIiwidXNlcl9pZCI6MX0.Ya7nYfxRk9_JFT26Rkv1AP7K1_2aIWGvrWuvQCZymnM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/6f9d5118-ac2b-429c-a25d-b9047505da05/public/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"6f9d5118-ac2b-429c-a25d-b9047505da05",
+						"public",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/wishlist/:id/remove/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDE2Nzk1LCJpYXQiOjE2ODQ0MjQ3OTUsImp0aSI6IjFkNGI1YmVjNTBjYTRjYjY4MzBjNmIzYmY4MDAzODRjIiwidXNlcl9pZCI6MX0.Ya7nYfxRk9_JFT26Rkv1AP7K1_2aIWGvrWuvQCZymnM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "b8d6c13c-75f6-4948-b2b2-356ec77f9c55",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8/remove/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8",
+						"remove",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/users/wishlist/:id/delete/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MDE2NDkyLCJpYXQiOjE2ODQ0MjQ0OTIsImp0aSI6ImFkNDhmNjU4ODQzZDRkN2E5Y2Q3OGUwM2YzY2RhYzhiIiwidXNlcl9pZCI6OH0._IIiFcIwBVN0OpH_RiaS-fksMYlAGW18QPOXeiPMIv4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/wishlist/9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8/delete/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"wishlist",
+						"9e4aab1e-6cd8-4931-8ff3-95c8370fa9d8",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/update/:id/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMDY0NzgxLCJpYXQiOjE2ODA0NzI3ODEsImp0aSI6Ijk0NGQ4Yzk2NjdhMjRiZTZhYjYzZTg4ZjhmYTM3MWU3IiwidXNlcl9pZCI6MX0.r3hA3UpqLS7jaFoI9jVyNd4Rx5nJHjPHH2otQlku6Dw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Saumojit",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "saumojit@tcs.com",
+							"type": "default"
+						},
+						{
+							"key": "isPortalAdmin",
+							"value": "True",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/update/24/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"update",
+						"24",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/users/profile/update/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNTk3OTM3LCJpYXQiOjE2ODAwMDU5MzcsImp0aSI6ImZjODVhNWJhYjFjZjQ5MGJiYjU5ZTA4YzUyNWJmZTllIiwidXNlcl9pZCI6OH0.sjFcxdmLB2hSdFmpxsVHF8QRWhkO-ph4Uby-TWGOsAU",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyNjI0ODA4LCJpYXQiOjE2ODAwMzI4MDgsImp0aSI6IjJlMDBjMTYyZjE1ODRlZTBiYjJlYTQwZjI1ZTk1NzZmIiwidXNlcl9pZCI6OH0.5Rc4i15xCQxAGgHB7-_eS1zcdNivPIh-ozo5jkJWgxA",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/profile/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"profile",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE api/users/delete/:id/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMDY0NzgxLCJpYXQiOjE2ODA0NzI3ODEsImp0aSI6Ijk0NGQ4Yzk2NjdhMjRiZTZhYjYzZTg4ZjhmYTM3MWU3IiwidXNlcl9pZCI6MX0.r3hA3UpqLS7jaFoI9jVyNd4Rx5nJHjPHH2otQlku6Dw",
+						"description": "admin",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/delete/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"delete",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMTEwMTcwLCJpYXQiOjE2ODA1MTgxNzAsImp0aSI6IjlhMGRiY2QxNWFhMjQ2OWViM2QwMDBkZDQ3MTBhZjJmIiwidXNlcl9pZCI6OH0.0NeUN4j_DXM6MHK0qF9NvDKYCy_sJxsMk08kKmJfNgU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL}}/api/orders",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/myorders/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2OTg0NTUyLCJpYXQiOjE2ODQzOTI1NTIsImp0aSI6IjdiZjY0MWQ1MDBjYzQwMjU4NWQzZDc5N2Y4ZDEwYmU3IiwidXNlcl9pZCI6MX0._UfCaOJnoJAeCsaA6Yw5zPgZ0GZlD4ECl3DMUbXCG2Q",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/myorders/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"myorders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/orders/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODY2NzExLCJpYXQiOjE2ODAyNzQ3MTEsImp0aSI6Ijc1NDkwYTMzNDJlYjQ5OTViN2I4Y2ZjYWM3YTYzM2MzIiwidXNlcl9pZCI6MX0.X1J-M9z9yfst32YmJGzYYVnip_FyzsFH4Q_6jebQXWM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/95e3ccb8-4e25-4efc-843c-49007e0e4b66/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"95e3ccb8-4e25-4efc-843c-49007e0e4b66",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/orders/:id/pay/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODg1NDc5LCJpYXQiOjE2ODAyOTM0NzksImp0aSI6ImU5YzZkOWEyM2IxZDQyNDhiMzc2Y2Q4MjExYjUwZjVjIiwidXNlcl9pZCI6OH0.7827T1JyQ8gZScAMMswju9hlk4fT61hPCxdhA4yvJNM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/95e3ccb8-4e25-4efc-843c-49007e0e4b66/pay/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"95e3ccb8-4e25-4efc-843c-49007e0e4b66",
+						"pay",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODg1NDc5LCJpYXQiOjE2ODAyOTM0NzksImp0aSI6ImU5YzZkOWEyM2IxZDQyNDhiMzc2Y2Q4MjExYjUwZjVjIiwidXNlcl9pZCI6OH0.7827T1JyQ8gZScAMMswju9hlk4fT61hPCxdhA4yvJNM",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/orders/:id/deliver/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMTEwMTcwLCJpYXQiOjE2ODA1MTgxNzAsImp0aSI6IjlhMGRiY2QxNWFhMjQ2OWViM2QwMDBkZDQ3MTBhZjJmIiwidXNlcl9pZCI6OH0.0NeUN4j_DXM6MHK0qF9NvDKYCy_sJxsMk08kKmJfNgU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL}}/api/orders/8b6348f0-c5b8-4b85-8535-aa928548b28d/deliver/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"8b6348f0-c5b8-4b85-8535-aa928548b28d",
+						"deliver",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/products/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/products/ff120baa-e945-4253-b552-dd598ed49621/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"ff120baa-e945-4253-b552-dd598ed49621",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/products/create/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0Mjg4ODE4LCJpYXQiOjE2ODE2OTY4MTgsImp0aSI6ImMzZDQwOTgzZDAxODQxNjg5NjBkOTRjNGExYmQ4MGM5IiwidXNlcl9pZCI6OH0.d9JlYugf-pKJIsZh5Rz6QnY3EgJIcAQzayH2eyG3cSc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n            \"name\": \"sample101\",\r\n            \"brand\": \"sample\",\r\n            \"category\": \"sample\",\r\n            \"description\": \"sample\",\r\n            \"rating\": 0,\r\n            \"numReviews\": 0 ,\r\n            \"price\": 0 ,\r\n            \"countInStock\": 0\r\n        }\r\n        ,\r\n        {\r\n            \"name\": \"sample100\",\r\n            \"brand\": \"sample\",\r\n            \"category\": \"sample\",\r\n            \"description\": \"sample\",\r\n            \"rating\": 0,\r\n            \"numReviews\": 0 ,\r\n            \"price\": 0 ,\r\n            \"countInStock\": 0\r\n        }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/products/create/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/products/:id/reviews/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0NzMxNTI0LCJpYXQiOjE2ODIxMzk1MjQsImp0aSI6IjU1ZjZjN2Q4Y2FhNDRkZjRhODIwMDIyZGY2NDI4ZGI1IiwidXNlcl9pZCI6MX0.CBOn53uyQGlg2VMpLb3zsHbkMmYs7kJt0Zq0S08HSQg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "default"
+						},
+						{
+							"key": "comment",
+							"value": "Nothing Can Beat Mac In Universe",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/products/ff120baa-e945-4253-b552-dd598ed49621/reviews/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"ff120baa-e945-4253-b552-dd598ed49621",
+						"reviews",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/products/update/:id/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMTEwMTcwLCJpYXQiOjE2ODA1MTgxNzAsImp0aSI6IjlhMGRiY2QxNWFhMjQ2OWViM2QwMDBkZDQ3MTBhZjJmIiwidXNlcl9pZCI6OH0.0NeUN4j_DXM6MHK0qF9NvDKYCy_sJxsMk08kKmJfNgU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL}}/api/products/update/faea770c-6101-4ef0-876c-78764ecd1f8b/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"update",
+						"faea770c-6101-4ef0-876c-78764ecd1f8b",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/products/delete/:id/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMTEwMTcwLCJpYXQiOjE2ODA1MTgxNzAsImp0aSI6IjlhMGRiY2QxNWFhMjQ2OWViM2QwMDBkZDQ3MTBhZjJmIiwidXNlcl9pZCI6OH0.0NeUN4j_DXM6MHK0qF9NvDKYCy_sJxsMk08kKmJfNgU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL}}/api/products/delete/8d7a32e9-2581-456d-8619-d3dcab742707/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"delete",
+						"8d7a32e9-2581-456d-8619-d3dcab742707",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

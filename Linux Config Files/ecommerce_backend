@@ -1,0 +1,12 @@
+server {
+listen 80;
+server_name 192.168.142.128;
+
+location = /favicon.ico { access_log off; log_not_found off; }
+location /static_cdn/ { root /home/saumojit/projects/ecommerce/backend; }
+
+location / {
+        include         uwsgi_params;
+        uwsgi_pass      unix:/run/uwsgi/projects/ecommerce/backend.sock;
+    }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=uWSGI Emperor service
+[Service]
+ExecStartPre=/bin/bash -c 'mkdir -p /run/uwsgi; chown saumojit:www-data /run/uwsgi'
+ExecStart=/home/saumojit/venv/bin/uwsgi --emperor /etc/uwsgi/sites
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+[Install]
+WantedBy=multi-user.target
