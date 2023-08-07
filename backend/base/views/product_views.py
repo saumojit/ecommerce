@@ -1,6 +1,10 @@
 import time
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator , EmptyPage , PageNotAnInteger
+from django.core.cache import cache
+from django.conf import settings
+from django.core.cache.backends.base import DEFAULT_TIMEOUT  # DEFAULT_TIMEOUT = 5 Minutes
+CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
 
 from rest_framework.decorators import api_view , permission_classes
 from rest_framework.permissions import IsAuthenticated , IsAdminUser
@@ -10,11 +14,11 @@ from rest_framework import status
 from base.models import Product , Review
 from base.serializers import ProductSerializer
 
+
 #  from django.http import JsonResponse
 #  from .products import products
 
-
-#  Create your views here.
+##  Views ------->>>>>----------------------->>>>>--------------------->>>>>------------------>>>>>------------------>>>>
 
 @api_view(['GET'])
 def getRoutes(request):
@@ -31,7 +35,26 @@ def getProducts(request):
     print("query: ", query)
     if(query is None):
         query=''
-    products=Product.objects.filter(name__icontains=query) # Search Bar
+
+    #### Query Search Results Cache -- Caching Query In ORM Rather Than Json Reduces Memory Space by almost 25%
+    ## ** Example **
+    ## 127.0.0.1:6379> memory usage :1:proshop_cache_results_ch_json
+    ## (integer) 4176
+    ## 127.0.0.1:6379> memory usage :1:proshop_cache_results_ch
+    ## (integer) 3144
+    if(query!=''):
+        if(f'proshop_cache_results_{query}' in cache):
+            print('Fetching Data From Cache ** Cache-Hit')
+            products=cache.get(f'proshop_cache_results_{query}')
+        else:
+            print('Fetching Data From DB ** Cache-Miss')
+            products=Product.objects.filter(name__icontains=query) # Search Bar
+            cache.set(f'proshop_cache_results_{query}' , products , timeout=CACHE_TTL)
+    else:
+        products=Product.objects.filter(name__icontains='') # All Products Are Fetched
+    print(products)
+
+    
     #  products=Product.objects.all()
     #  serializer=ProductSerializer(products,many=True)
     #  return Response(serializer.data)
