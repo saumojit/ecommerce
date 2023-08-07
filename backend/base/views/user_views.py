@@ -14,6 +14,7 @@ from rest_framework import status
 
 from base.serializers import UserSerializer , UserSerializerWithToken , WishListSerializer , ShippingListSerializer
 from base.models import WishList,WishListItems,Product,Account,ShippingList
+from base.tasks import send_registration_mail_task
 
 # from django.http import JsonResponse
 # from .products import products
@@ -57,6 +58,8 @@ def registerUser(request):
             password=make_password(data['password']) ,
         )
         serializer=UserSerializerWithToken(user , many=False)
+        # here adding asynchronous email manager
+        send_registration_mail_task.delay(data['name'], data['email'])
         return Response(serializer.data)
     except:
         message = {'detail': 'User With This Email Already Exists'}

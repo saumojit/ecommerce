@@ -1,0 +1,9 @@
+Hi {{ name|safe }} , 
+
+Thanks For Signing Up to the platform . 🎉🎉🎉
+ProShop Provides Tech Gadgets At A Reasonable Price with a 24 X 7 Support. ( * T & C Applicable * ) .
+Stay Updated With Technology. 😎
+
+Regards,
+ProShop Team
+Benetinct Street , London 

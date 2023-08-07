@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "base.apps.BaseConfig",
     "rest_framework",
     "corsheaders",
+    "django_celery_results",
 ]
 
 # as we have given default auth classes to jwt, hence request.user will return nothing unless we pass jwt token as bearer
@@ -190,21 +191,20 @@ USE_TZ = True
 
 
 ## Static Files Handling ...
-
 STATIC_URL = "static/"
 MEDIA_URL = "/images/"
 STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')]
 MEDIA_ROOT='static/images' #By this , it will be saved in this directory
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
 
 # CORS_ALLOWED_ORIGINS = [
 #     "https://127.0.0.1:8000",
 # ]
-
 CORS_ALLOW_ALL_ORIGINS = True
 
 
@@ -213,7 +213,30 @@ CORS_ALLOW_ALL_ORIGINS = True
 # # https://stackoverflow.com/questions/24022558/differences-between-staticfiles-dir-static-root-and-media-root
 # STATIC_ROOT is useless during development, it's only required for deployment.
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn/')
-
 STATIC_ROOT="/var/www/mysite/assets/"
 
 
+### Celery - Asynchornous Process 
+CELERY_RESULT_BACKEND='django-db'
+
+
+### Email SETUP CONFIG
+# EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' # It shows up email content rather than actually sending mail
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.office365.com'
+EMAIL_HOST_USER='iam.sbhatt@outlook.com'
+EMAIL_HOST_PASSWORD='saumojit@98'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+DEFAULT_FROM_EMAIL='iam.sbhatt@outlook.com'
+
+
+### Caching on Redis
+CACHE_TTL=60*20 # 20 Minutes 
+CACHES={
+    "default": {
+        "BACKEND" : "django.core.cache.backends.redis.RedisCache" ,
+        "LOCATION" : "redis://127.0.0.1:6379" ,
+        # "LOCATION": "redis://saumojit:123@127.0.0.1:6379"
+    }
+}
