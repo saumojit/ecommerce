@@ -224,11 +224,11 @@ CELERY_RESULT_BACKEND='django-db'
 # EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' # It shows up email content rather than actually sending mail
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.office365.com'
-EMAIL_HOST_USER='iam.sbhatt@outlook.com'
-EMAIL_HOST_PASSWORD='saumojit@98'
+EMAIL_HOST_USER='mymail@outlook.com'
+EMAIL_HOST_PASSWORD='password'
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
-DEFAULT_FROM_EMAIL='iam.sbhatt@outlook.com'
+DEFAULT_FROM_EMAIL='mymail@outlook.com'
 
 
 ### Caching on Redis
