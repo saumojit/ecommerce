@@ -1,9 +1,8 @@
+<h1 align="center" id="title">Ecommerce Platform</h1>
 
-# Project Title : State of Art Project
+<p align="center"><img src="https://socialify.git.ci/saumojit/ecommerce/image?description=1&amp;name=1&amp;owner=1&amp;theme=Light" alt="project-image"></p>
 
-E-commerce Website for Consumer , Delivery Partners and Admins
-
-
+<p align="center"><img src="https://img.shields.io/badge/Django-092E20.svg?style=for-the-badge&amp;logo=Django&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&amp;logo=React&amp;logoColor=black" alt="shields"><img src="https://img.shields.io/badge/Redux-764ABC.svg?style=for-the-badge&amp;logo=Redux&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/Celery-37814A.svg?style=for-the-badge&amp;logo=Celery&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/Redis-DC382D.svg?style=for-the-badge&amp;logo=Redis&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/RabbitMQ-FF6600.svg?style=for-the-badge&amp;logo=RabbitMQ&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&amp;logo=Python&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/Google-4285F4.svg?style=for-the-badge&amp;logo=Google&amp;logoColor=white" alt="shields"></p>
 
 ## Installation
 
